@@ -94,7 +94,9 @@ public class PatientMedicalRecords extends javax.swing.JFrame {
         try{
             Connection con = DBConnection.getCon();
             Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("SELECT * FROM patient INNER JOIN patientDiagnosisReports ON patient.patientID = patientDiagnosisReports.patientID");
+            //ResultSet rs = st.executeQuery("SELECT * FROM patient INNER JOIN patientDiagnosisReports ON patient.patientID = patientDiagnosisReports.patientID");
+            ResultSet rs = st.executeQuery("SELECT p.patientID as PatientID, p.name as Name, p.contactNumber as Contact_Number,"
+                    + "p.age as Age, p.gender as Gender, p.bloodGroup as Blood_Group, p.address as Address, p.majorDiseases as Major_Diseases, p.date as Date, r.symptoms as Symptoms, r.diagnosis as Diagnosis,r.medicinesPrescribed as Prescribed_Medicines, r.wardReq as Ward_Required, r.wardtype as Ward_Type FROM patient as p INNER JOIN patientDiagnosisReports as r on p.patientid = r.patientid order by p.patientid;");
             patientRecordsTable.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
             patientRecordsTable.setModel(DbUtils.resultSetToTableModel(rs));
         }

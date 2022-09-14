@@ -4,10 +4,13 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Mahapatra/Documents/NetBeansProjects/Hospital_Management_System/src/hospital_management_system/AddDiagnosisDetails.java</file>
-            <file>file:/C:/Users/Mahapatra/Documents/NetBeansProjects/Hospital_Management_System/src/Project/DBConnection.java</file>
+            <file>file:/C:/Users/Mahapatra/Documents/NetBeansProjects/Hospital_Management_System/src/hospital_management_system/PatientMedicalRecords.java</file>
             <file>file:/C:/Users/Mahapatra/Documents/NetBeansProjects/Hospital_Management_System/src/hospital_management_system/AddPatient.java</file>
+            <file>file:/C:/Users/Mahapatra/Documents/NetBeansProjects/Hospital_Management_System/src/DatabaseConnection/DBConnection.java</file>
+            <file>file:/C:/Users/Mahapatra/Documents/NetBeansProjects/Hospital_Management_System/src/hospital_management_system/UpdatePatientRecords.java</file>
             <file>file:/C:/Users/Mahapatra/Documents/NetBeansProjects/Hospital_Management_System/src/hospital_management_system/Hospital_Management_System.java</file>
             <file>file:/C:/Users/Mahapatra/Documents/NetBeansProjects/Hospital_Management_System/src/hospital_management_system/LoginPage.java</file>
+            <file>file:/C:/Users/Mahapatra/Documents/NetBeansProjects/Hospital_Management_System/src/hospital_management_system/HospitalInformation.java</file>
             <file>file:/C:/Users/Mahapatra/Documents/NetBeansProjects/Hospital_Management_System/src/hospital_management_system/HomePage.java</file>
         </group>
     </open-files>
