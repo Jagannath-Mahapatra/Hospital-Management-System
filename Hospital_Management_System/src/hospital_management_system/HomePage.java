@@ -33,6 +33,7 @@ public class HomePage extends javax.swing.JFrame {
         manageRecordsButton = new javax.swing.JButton();
         logoutButton = new javax.swing.JButton();
         hospitalInfoButton = new javax.swing.JButton();
+        doctorListButton = new javax.swing.JButton();
         backgroundImage = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -51,7 +52,7 @@ public class HomePage extends javax.swing.JFrame {
                 addPatientButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(addPatientButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(113, 100, -1, -1));
+        getContentPane().add(addPatientButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, -1, -1));
 
         addDiagnosisButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospital_management_system/diagnosis_info_icon.png"))); // NOI18N
         addDiagnosisButton.setText("Add Diagnosis Details");
@@ -61,7 +62,7 @@ public class HomePage extends javax.swing.JFrame {
                 addDiagnosisButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(addDiagnosisButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 100, -1, -1));
+        getContentPane().add(addDiagnosisButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 100, -1, -1));
 
         patientHistoryButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospital_management_system/medical_history_icon.png"))); // NOI18N
         patientHistoryButton.setText("Patient Medical Records");
@@ -71,7 +72,7 @@ public class HomePage extends javax.swing.JFrame {
                 patientHistoryButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(patientHistoryButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(681, 100, -1, -1));
+        getContentPane().add(patientHistoryButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 100, -1, -1));
 
         manageRecordsButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospital_management_system/manage_patient_records_icon.png"))); // NOI18N
         manageRecordsButton.setText("Update Patient Records");
@@ -81,7 +82,7 @@ public class HomePage extends javax.swing.JFrame {
                 manageRecordsButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(manageRecordsButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(983, 100, -1, -1));
+        getContentPane().add(manageRecordsButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 100, -1, -1));
 
         logoutButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospital_management_system/logout_icon.png"))); // NOI18N
         logoutButton.setText("Logout");
@@ -90,7 +91,7 @@ public class HomePage extends javax.swing.JFrame {
                 logoutButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(logoutButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 10, -1, -1));
+        getContentPane().add(logoutButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 10, -1, -1));
 
         hospitalInfoButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospital_management_system/hospital_info_icon.png"))); // NOI18N
         hospitalInfoButton.setText("Hospital Information");
@@ -99,10 +100,21 @@ public class HomePage extends javax.swing.JFrame {
                 hospitalInfoButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(hospitalInfoButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 10, -1, -1));
+        getContentPane().add(hospitalInfoButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 10, -1, -1));
+
+        doctorListButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospital_management_system/doctor.png"))); // NOI18N
+        doctorListButton.setText("Doctor List");
+        doctorListButton.setPreferredSize(new java.awt.Dimension(235, 60));
+        doctorListButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                doctorListButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(doctorListButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 100, 204, 59));
 
         backgroundImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospital_management_system/background_image.jpg"))); // NOI18N
-        getContentPane().add(backgroundImage, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -10, -1, -1));
+        backgroundImage.setPreferredSize(new java.awt.Dimension(1366, 768));
+        getContentPane().add(backgroundImage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -134,6 +146,10 @@ public class HomePage extends javax.swing.JFrame {
     private void hospitalInfoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hospitalInfoButtonActionPerformed
         new HospitalInformation().setVisible(true);
     }//GEN-LAST:event_hospitalInfoButtonActionPerformed
+
+    private void doctorListButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doctorListButtonActionPerformed
+        new ManageDoctorsList().setVisible(true);
+    }//GEN-LAST:event_doctorListButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -177,6 +193,7 @@ public class HomePage extends javax.swing.JFrame {
     private javax.swing.JButton addDiagnosisButton;
     private javax.swing.JButton addPatientButton;
     private javax.swing.JLabel backgroundImage;
+    private javax.swing.JButton doctorListButton;
     private javax.swing.JButton hospitalInfoButton;
     private javax.swing.JButton logoutButton;
     private javax.swing.JButton manageRecordsButton;
