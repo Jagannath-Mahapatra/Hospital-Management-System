@@ -1,4 +1,4 @@
-# HospitalManagementSystem
+# Hospital Management System
 Hospital Management Application using Java Swing and MySQL
 
 It is a window-based application made using Swing GUI package of Java that enables the user to maintain records of patients that visit a hospital for checkup and diagnosis and the available doctors.
