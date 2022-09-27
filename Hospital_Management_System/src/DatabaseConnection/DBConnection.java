@@ -20,14 +20,4 @@ public class DBConnection {
             return null;
         }
     }
-//    public static void main(String[] args){
-//        String className = "com.mysql.cj.jdbc.Driver";
-//        try{
-//            Class.forName(className);
-//            System.out.println("Success");
-//        }
-//        catch(Exception e){
-//            System.out.println("Failure");
-//        }
-//    }
 }
